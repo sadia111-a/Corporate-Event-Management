@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Annual Tech Conference",
+    "image": "https://example.com/conference_image.jpg",
+    "price": "$500",
+    "description": "Join industry experts and thought leaders at our annual tech conference. Explore the latest trends and innovations in technology."
+  },
+  {
+    "id": 2,
+    "name": "International Trade Expo",
+    "image": "https://example.com/trade_show_image.jpg",
+    "price": "Free admission",
+    "description": "Discover a world of opportunities at our international trade expo. Connect with global businesses and showcase your products."
+  },
+  {
+    "id": 3,
+    "name": "Team Building Adventure Retreat",
+    "image": "https://example.com/team_building_image.jpg",
+    "price": "$800 per person",
+    "description": "Embark on an unforgettable team-building adventure retreat. Strengthen bonds, build trust, and enhance teamwork."
+  },
+  {
+    "id": 4,
+    "name": "Product X Launch Event",
+    "image": "https://example.com/product_launch_image.jpg",
+    "price": "Invitation-only",
+    "description": "Be the first to witness the unveiling of our revolutionary Product X. Exclusive event for industry insiders."
+  },
+  {
+    "id": 5,
+    "name": "Quarterly Board Meeting",
+    "image": "https://example.com/corporate_meeting_image.jpg",
+    "price": "Internal event",
+    "description": "Join our quarterly board meeting to discuss strategic goals and key initiatives for the upcoming quarter."
+  },
+  {
+    "id": 6,
+    "name": "Annual Excellence Awards Gala",
+    "image": "https://example.com/award_ceremony_image.jpg",
+    "price": "$100 per ticket",
+    "description": "Celebrate excellence at our annual awards gala. Recognize outstanding achievements and contributions in various fields."
+  }
+]
