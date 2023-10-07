@@ -11,7 +11,7 @@
     "id": 2,
     "name": "International Trade Expo",
     "image": "https://i.ibb.co/RHgLv3W/istockphoto-1145033863-1024x1024.jpg",
-    "price": "Free admission",
+    "price": "$400",
     "description": "Discover a world of opportunities at our international trade expo. Connect with global businesses and showcase your products.",
     "details": "Our International Trade Expo service is designed to facilitate global business opportunities and networking. We connect businesses, trade professionals, and industry experts from around the world to explore new markets, showcase products and services, and foster international collaboration.Exporters and importers seeking to expand their international presence."
   },
@@ -27,15 +27,15 @@
     "id": 4,
     "name": "Product Launch Event",
     "image": "https://i.ibb.co/mvBQn0b/Product-X-Launch-Event.jpg",
-    "price": "Invitation-only",
-    "description": "Be the first to witness the unveiling of our revolutionary Product X. Exclusive event for industry insiders.",
+    "price": "$300",
+    "description": "Be the first to witness the unveiling of our revolutionary Product. Exclusive event for industry insiders.The event aims to create excitement, generate buzz,",
     "details": "Our Product Launch Event service is designed to help your company create a memorable and successful product launch. We offer end-to-end event planning and management to ensure that your product launch goes off without a hitch.Maximize brand exposure,generate buzz and excitement around your product,engage with key stakeholders and customers,create a lasting impression,cost-effective solutions."
   },
   {
     "id": 5,
     "name": "Quarterly Board Meeting",
     "image": "https://i.ibb.co/frSd47d/Quarterly-Board-Meeting.jpg",
-    "price": "Internal event",
+    "price": "$200",
     "description": "Join our quarterly board meeting to discuss strategic goals and key initiatives for the upcoming quarter.It occurs once every three months",
     "details": "Our Quarterly Board Meeting service is designed to facilitate productive and strategic discussions among your company's board members. It ensures that your board is well-informed and aligned with the company's goals and initiatives.Enhanced corporate governance,strategic decision-making,improved transparency,effective communication and alignment of board members with company objectives"
   },

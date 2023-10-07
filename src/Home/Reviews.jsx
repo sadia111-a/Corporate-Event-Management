@@ -1,5 +1,3 @@
-import React from "react";
-
 const Reviews = () => {
   return (
     <div className="min-h-[60vh]">
@@ -7,7 +5,7 @@ const Reviews = () => {
         Our Customer Care Services
       </h2>
       <div>
-        <div className="hero min-h-screen bg-orange-100 shadow-md">
+        <div className="hero min-h-screen bg-base-300 shadow-md">
           <div className="hero-content flex-col lg:flex-row">
             <img
               src="https://i.ibb.co/2cQBrhM/customer.jpg"

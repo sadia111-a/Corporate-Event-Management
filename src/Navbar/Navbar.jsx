@@ -68,22 +68,50 @@ const Navbar = () => {
                   Blog
                 </NavLink>
               </li>
+              <li className="text-black  text-sm font-semibold">
+                <NavLink
+                  to="/login"
+                  className={({ isActive, isPending }) =>
+                    isPending
+                      ? "pending"
+                      : isActive
+                      ? "text-amber-500 underline text-sm font-bold"
+                      : ""
+                  }
+                >
+                  Login
+                </NavLink>
+              </li>
+              <li className="text-black  text-sm font-semibold">
+                <NavLink
+                  to="/register"
+                  className={({ isActive, isPending }) =>
+                    isPending
+                      ? "pending"
+                      : isActive
+                      ? "text-amber-500 underline text-sm font-bold"
+                      : ""
+                  }
+                >
+                  Register
+                </NavLink>
+              </li>
             </ul>
           </div>
-          <a className=" bg-gray-100 px-3 rounded-md font-extrabold text-xl text-amber-500 lg:text-3xl">
+          <a className=" bg-gray-100 px-3 rounded-md font-extrabold text-lg text-amber-500 lg:text-3xl">
             Corporate Events
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="flex gap-6 px-1">
-            <li className="text-black text-xl font-semibold">
+            <li className="text-black text-lg font-semibold">
               <NavLink
                 to="/"
                 className={({ isActive, isPending }) =>
                   isPending
                     ? "pending"
                     : isActive
-                    ? "text-amber-500 underline text-xl font-bold"
+                    ? "text-amber-500 bg-base-300 px-3 rounded-md text-lg font-bold"
                     : ""
                 }
               >
@@ -91,38 +119,66 @@ const Navbar = () => {
               </NavLink>
             </li>
 
-            <li className="text-black text-xl font-semibold">
+            <li className="text-black text-lg font-semibold">
               <NavLink
                 to="/about"
                 className={({ isActive, isPending }) =>
                   isPending
                     ? ""
                     : isActive
-                    ? "text-amber-500 underline text-xl font-bold"
+                    ? "text-amber-500 bg-base-300 rounded-md px-3 text-lg font-bold"
                     : ""
                 }
               >
                 About
               </NavLink>
             </li>
-            <li className="text-black text-xl font-semibold">
+            <li className="text-black text-lg font-semibold">
               <NavLink
                 to="/blog"
                 className={({ isActive, isPending }) =>
                   isPending
                     ? "pending"
                     : isActive
-                    ? "text-amber-500 underline text-xl font-bold"
+                    ? "text-amber-500 bg-base-300 px-3 rounded-md text-lg font-bold"
                     : ""
                 }
               >
                 Blog
               </NavLink>
             </li>
+            <li className="text-black text-lg font-semibold">
+              <NavLink
+                to="/login"
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "text-amber-500 bg-base-300 px-3 rounded-md text-lg font-bold"
+                    : ""
+                }
+              >
+                Login
+              </NavLink>
+            </li>
+            <li className="text-black text-lg font-semibold">
+              <NavLink
+                to="/register"
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "text-amber-500 bg-base-300 px-3 rounded-md text-lg font-bold"
+                    : ""
+                }
+              >
+                Register
+              </NavLink>
+            </li>
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn text-amber-500 font-semibold">Login</a>
+          <a className="btn text-amber-500 font-semibold">Sign out</a>
         </div>
       </div>
     </div>

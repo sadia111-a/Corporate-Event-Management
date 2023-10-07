@@ -5,7 +5,7 @@ const LatestPost = () => {
         <h2 className="text-3xl mt-10  text-center font-bold text-orange-500">
           Got Questions?
         </h2>
-        <div className="">
+        <div className="bg-base-200">
           <p className="mt-10 mb-5 pr-">
             <li className="list-inside ">
               Have questions? We have answers here!
@@ -28,7 +28,7 @@ const LatestPost = () => {
         </div>
       </div>
       <div className="mt-5 mb-10">
-        <div className="collapse collapse-plus bg-orange-50 mb-2">
+        <div className="collapse collapse-plus bg-base-200 mb-2">
           <input type="radio" name="my-accordion-3" checked="checked" />
           <div className="collapse-title text-xl font-medium">
             How do I sign up?
@@ -49,7 +49,7 @@ const LatestPost = () => {
             </p>
           </div>
         </div>
-        <div className="collapse collapse-plus bg-orange-50 mb-2">
+        <div className="collapse collapse-plus bg-base-200 mb-2">
           <input type="radio" name="my-accordion-3" />
           <div className="collapse-title text-xl font-medium">
             Is it really free?
@@ -66,7 +66,7 @@ const LatestPost = () => {
             </p>
           </div>
         </div>
-        <div className="collapse collapse-plus bg-orange-50 mb-2">
+        <div className="collapse collapse-plus bg-base-200 mb-2">
           <input type="radio" name="my-accordion-3" />
           <div className="collapse-title text-xl font-medium">
             Can I Bring my domain?
@@ -78,7 +78,7 @@ const LatestPost = () => {
             </p>
           </div>
         </div>
-        <div className="collapse collapse-plus bg-orange-50 mb-2">
+        <div className="collapse collapse-plus bg-base-200 mb-2">
           <input type="radio" name="my-accordion-3" />
           <div className="collapse-title text-xl font-medium">
             Do you offer discounts?
@@ -91,7 +91,7 @@ const LatestPost = () => {
             </p>
           </div>
         </div>
-        <div className="collapse collapse-plus bg-orange-50 mb-2">
+        <div className="collapse collapse-plus bg-base-200 mb-2">
           <input type="radio" name="my-accordion-3" />
           <div className="collapse-title text-xl font-medium">
             Does my church need to sign a contract ?
