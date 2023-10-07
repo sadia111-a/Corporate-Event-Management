@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="bg-base-100">
+    <div className="bg-base-100 shadow-xl mb-3 rounded-md">
       <div className="navbar bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
@@ -70,7 +70,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="italic bg-slate-300 font-extrabold text-xl text-amber-500 lg:text-3xl">
+          <a className="italic bg-slate-300 px-3 rounded-md font-extrabold text-xl text-amber-500 lg:text-3xl">
             Corporate Events
           </a>
         </div>
