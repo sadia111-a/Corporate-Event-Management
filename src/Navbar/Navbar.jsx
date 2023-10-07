@@ -70,7 +70,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="italic bg-slate-300 px-3 rounded-md font-extrabold text-xl text-amber-500 lg:text-3xl">
+          <a className=" bg-gray-100 px-3 rounded-md font-extrabold text-xl text-amber-500 lg:text-3xl">
             Corporate Events
           </a>
         </div>

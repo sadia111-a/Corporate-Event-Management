@@ -4,41 +4,47 @@
     "name": "Annual Tech Conference",
     "image": "https://i.ibb.co/yqG1bZS/istockphoto-Annual-Tech-Conference.jpg",
     "price": "$500",
-    "description": "Join industry experts and thought leaders at our annual tech conference. Explore the latest trends and innovations in technology."
+    "description": "Join industry experts and thought leaders at our annual tech conference. Explore the latest trends and innovations in technology.",
+    "details": "Our Annual Tech Conference is a premier event that brings together industry experts, thought leaders, and technology enthusiasts to explore the latest trends, innovations, and best practices in the tech world. It provides a platform for networking, learning, and collaboration.Share feedback and testimonials from past attendees or speakers to build credibility and generate interest."
   },
   {
     "id": 2,
     "name": "International Trade Expo",
     "image": "https://i.ibb.co/RHgLv3W/istockphoto-1145033863-1024x1024.jpg",
     "price": "Free admission",
-    "description": "Discover a world of opportunities at our international trade expo. Connect with global businesses and showcase your products."
+    "description": "Discover a world of opportunities at our international trade expo. Connect with global businesses and showcase your products.",
+    "details": "Our International Trade Expo service is designed to facilitate global business opportunities and networking. We connect businesses, trade professionals, and industry experts from around the world to explore new markets, showcase products and services, and foster international collaboration.Exporters and importers seeking to expand their international presence."
   },
   {
     "id": 3,
-    "name": "Team Building Adventure Retreat",
+    "name": "Team Building Adventure",
     "image": "https://i.ibb.co/Vxj3Hp6/Team-Building-Adventure-Retreat.jpg",
     "price": "$800/person",
-    "description": "Embark on an unforgettable team-building adventure retreat. Strengthen bonds, build trust, and enhance teamwork."
+    "description": "Embark on an unforgettable team-building adventure retreat. Strengthen bonds, build trust, and enhance teamwork.",
+    "details": "Our Team Building Adventure program is designed to boost teamwork, enhance communication, and foster a spirit of collaboration among our employees. It's an exciting and interactive experience that combines outdoor challenges, problem-solving activities, and team bonding exercises.It improved teamwork and collaboration,enhanced problem-solving skills,Boosted morale and motivation,increased communication and trust among team members,fun and memorable experience for our employees"
   },
   {
     "id": 4,
-    "name": "Product X Launch Event",
+    "name": "Product Launch Event",
     "image": "https://i.ibb.co/mvBQn0b/Product-X-Launch-Event.jpg",
     "price": "Invitation-only",
-    "description": "Be the first to witness the unveiling of our revolutionary Product X. Exclusive event for industry insiders."
+    "description": "Be the first to witness the unveiling of our revolutionary Product X. Exclusive event for industry insiders.",
+    "details": "Our Product Launch Event service is designed to help your company create a memorable and successful product launch. We offer end-to-end event planning and management to ensure that your product launch goes off without a hitch.Maximize brand exposure,generate buzz and excitement around your product,engage with key stakeholders and customers,create a lasting impression,cost-effective solutions."
   },
   {
     "id": 5,
     "name": "Quarterly Board Meeting",
     "image": "https://i.ibb.co/frSd47d/Quarterly-Board-Meeting.jpg",
     "price": "Internal event",
-    "description": "Join our quarterly board meeting to discuss strategic goals and key initiatives for the upcoming quarter.It occurs once every three months"
+    "description": "Join our quarterly board meeting to discuss strategic goals and key initiatives for the upcoming quarter.It occurs once every three months",
+    "details": "Our Quarterly Board Meeting service is designed to facilitate productive and strategic discussions among your company's board members. It ensures that your board is well-informed and aligned with the company's goals and initiatives.Enhanced corporate governance,strategic decision-making,improved transparency,effective communication and alignment of board members with company objectives"
   },
   {
     "id": 6,
     "name": "Annual Excellence Awards Gala",
     "image": "https://i.ibb.co/Hr2vH6L/Award-Ceremonies.jpg",
     "price": "$100/ticket",
-    "description": "Celebrate excellence at our annual awards gala. Recognize outstanding achievements and contributions in various fields."
+    "description": "Celebrate excellence at our annual awards gala. Recognize outstanding achievements and contributions in various fields.",
+    "details": "Our Annual Excellence Awards Gala is a prestigious event that recognizes and celebrates the outstanding achievements of our employees over the past year. It is an opportunity for us to acknowledge their hard work, dedication, and commitment to excellence.Boosts employee morale and motivation,fosters a culture of appreciation and recognition,strengthens team cohesion."
   }
 ]
