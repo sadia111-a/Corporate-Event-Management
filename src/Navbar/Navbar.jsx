@@ -1,6 +1,8 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import useAuth from "../Hooks/useAuth";
 
 const Navbar = () => {
+  const { user, logOut } = useAuth();
   return (
     <div className="bg-base-100 shadow-xl mb-3 rounded-md">
       <div className="navbar bg-base-100">
@@ -177,8 +179,42 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
+        {/* avatar part  */}
         <div className="navbar-end">
-          <a className="btn text-amber-500 font-semibold">Sign out</a>
+          {user?.email ? (
+            <div className="dropdown dropdown-end">
+              <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                <div className="w-10 rounded-full">
+                  <img
+                    src="https://i.ibb.co/44BvCv7/user.png"
+                    alt={user.displayName}
+                  />
+                </div>
+              </label>
+              <ul
+                tabIndex={0}
+                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li>
+                  <button className="btn btn-sm  btn-ghost">
+                    {user.displayName}
+                  </button>
+                </li>
+                <li>
+                  <button
+                    className="btn text-amber-500 font-semibold"
+                    onClick={logOut}
+                  >
+                    Sign out
+                  </button>
+                </li>
+              </ul>
+            </div>
+          ) : (
+            <Link to="/login">
+              <button className="btn btn-sm  btn-ghost">Login</button>
+            </Link>
+          )}
         </div>
       </div>
     </div>

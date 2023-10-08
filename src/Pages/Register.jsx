@@ -1,13 +1,33 @@
 import { Link } from "react-router-dom";
 import SocialLogin from "./SocialLogin";
+import useAuth from "../Hooks/useAuth";
+import swal from "sweetalert";
 
 const Register = () => {
+  const { createUser } = useAuth();
   const handleRegister = (e) => {
     e.preventDefault();
     const name = e.target.name.value;
     const email = e.target.email.value;
+    const photo = e.target.photo.value;
     const password = e.target.password.value;
-    console.log(name, email, password);
+
+    // validation
+    if (password.length < 6) {
+      swal("Error!", " please give 6 characters password!", "error");
+      return;
+    } else if (!/[A-Z]/.test(password)) {
+      swal(
+        "Error!",
+        " Password must contain at least one capital letter!",
+        "error"
+      );
+      return;
+    }
+    // create a new user
+    createUser(email, password)
+      .then((res) => console.log(res))
+      .catch((error) => console.log(error));
   };
   return (
     <div className="hero min-h-screen bg-base-200">
@@ -44,6 +64,18 @@ const Register = () => {
               </div>
               <div className="form-control">
                 <label className="label">
+                  <span className="label-text">Photo URL</span>
+                </label>
+                <input
+                  type="url"
+                  name="photo"
+                  required
+                  placeholder="Photo URL"
+                  className="input input-bordered"
+                />
+              </div>
+              <div className="form-control">
+                <label className="label">
                   <span className="label-text">Password</span>
                 </label>
                 <input
@@ -60,7 +92,10 @@ const Register = () => {
                 </label>
               </div>
               <div className="form-control mt-6">
-                <button className="btn btn-primary bg-base-300 border-none text-black hover:bg-slate-200">
+                <button
+                  type="submit"
+                  className="btn btn-primary bg-base-300 border-none text-black hover:bg-slate-200"
+                >
                   Register
                 </button>
               </div>

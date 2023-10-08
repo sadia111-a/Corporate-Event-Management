@@ -1,12 +1,31 @@
 import { Link } from "react-router-dom";
 import SocialLogin from "./SocialLogin";
+import useAuth from "../Hooks/useAuth";
+import swal from "sweetalert";
 
 const Login = () => {
+  const { signIn } = useAuth();
   const handleLogin = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
-    console.log(email, password);
+
+    // validation
+    if (password.length < 6) {
+      swal("Error!", " please give 6 characters password!", "error");
+      return;
+    } else if (!/[A-Z]/.test(password)) {
+      swal(
+        "Error!",
+        " Password must contain at least one capital letter!",
+        "error"
+      );
+      return;
+    }
+    // create a new user
+    signIn(email, password)
+      .then((res) => console.log(res))
+      .catch((error) => console.log(error));
   };
   return (
     <div className="hero min-h-screen bg-base-200">
@@ -47,7 +66,10 @@ const Login = () => {
                 </label>
               </div>
               <div className="form-control mt-6">
-                <button className="btn btn-primary bg-base-300 border-none text-black hover:bg-slate-200">
+                <button
+                  type="submit"
+                  className="btn btn-primary bg-base-300 border-none text-black hover:bg-slate-200"
+                >
                   Login
                 </button>
               </div>
