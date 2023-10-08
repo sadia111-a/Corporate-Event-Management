@@ -1,10 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import SocialLogin from "./SocialLogin";
 import useAuth from "../Hooks/useAuth";
 import swal from "sweetalert";
 
 const Register = () => {
-  const { createUser } = useAuth();
+  const { createUser, handleUpdateProfile } = useAuth();
+  const navigate = useNavigate();
   const handleRegister = (e) => {
     e.preventDefault();
     const name = e.target.name.value;
@@ -23,11 +24,25 @@ const Register = () => {
         "error"
       );
       return;
+    } else if (!/[^A-Za-z0-9]/.test(password)) {
+      swal(
+        "Error!",
+        "Password must contain at least one special character!",
+        "error"
+      );
+      return;
     }
     // create a new user
     createUser(email, password)
-      .then((res) => console.log(res))
-      .catch((error) => console.log(error));
+      .then((res) => {
+        handleUpdateProfile(name, photo).then(() => {
+          swal("Good job!", "user created successfully", "success");
+          navigate("/");
+        });
+      })
+      .catch((error) => {
+        swal("Error!", " please register again!", "error");
+      });
   };
   return (
     <div className="hero min-h-screen bg-base-200">

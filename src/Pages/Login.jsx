@@ -1,31 +1,33 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import SocialLogin from "./SocialLogin";
 import useAuth from "../Hooks/useAuth";
 import swal from "sweetalert";
 
 const Login = () => {
   const { signIn } = useAuth();
+  const navigate = useNavigate();
   const handleLogin = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
 
-    // validation
-    if (password.length < 6) {
-      swal("Error!", " please give 6 characters password!", "error");
-      return;
-    } else if (!/[A-Z]/.test(password)) {
-      swal(
-        "Error!",
-        " Password must contain at least one capital letter!",
-        "error"
-      );
-      return;
-    }
     // create a new user
     signIn(email, password)
-      .then((res) => console.log(res))
-      .catch((error) => console.log(error));
+      .then((res) => {
+        swal("Good job!", "user logged in successfully", "success");
+        navigate("/");
+      })
+      .catch((error) => {
+        if (error.message === "Password mismatch error message") {
+          swal("Error!", "please try again!", "error");
+        } else {
+          swal(
+            "Error!",
+            "email and Password doesn't match, please try again!",
+            "error"
+          );
+        }
+      });
   };
   return (
     <div className="hero min-h-screen bg-base-200">

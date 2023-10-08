@@ -179,36 +179,23 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        {/* avatar part  */}
+
         <div className="navbar-end">
           {user?.email ? (
-            <div className="dropdown dropdown-end">
-              <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                <div className="w-10 rounded-full">
-                  <img
-                    src="https://i.ibb.co/44BvCv7/user.png"
-                    alt={user.displayName}
-                  />
-                </div>
-              </label>
-              <ul
-                tabIndex={0}
-                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-              >
-                <li>
-                  <button className="btn btn-sm  btn-ghost">
-                    {user.displayName}
-                  </button>
-                </li>
-                <li>
-                  <button
-                    className="btn text-amber-500 font-semibold"
-                    onClick={logOut}
-                  >
-                    Sign out
-                  </button>
-                </li>
-              </ul>
+            <div className="flex items-center">
+              <div className="mr-3">
+                <img
+                  src={user.photo}
+                  alt={user.displayName}
+                  className="w-10 h-10 rounded-full"
+                />
+              </div>
+              <div className="text-black text-lg font-semibold">
+                {user.displayName}
+              </div>
+              <button className="btn btn-sm ml-3" onClick={logOut}>
+                Log out
+              </button>
             </div>
           ) : (
             <Link to="/login">
