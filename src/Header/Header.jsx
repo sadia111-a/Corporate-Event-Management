@@ -15,7 +15,7 @@ const Header = () => {
             support of global mission success in office. Goal, vision and team
             building by fun colleagues hands connected in planning strategy
           </p>
-          {/* <button className="btn">Get Started</button> */}
+          <button className="btn bg-base-200 ">Get Started</button>
         </div>
       </div>
     </div>

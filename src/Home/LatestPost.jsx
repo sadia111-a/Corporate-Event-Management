@@ -5,8 +5,8 @@ const LatestPost = () => {
         <h2 className="text-3xl mt-10  text-center font-bold text-orange-500">
           Got Questions?
         </h2>
-        <div className="bg-base-200">
-          <p className="mt-10 mb-5 pr-">
+        <div className="bg-base-200 pl-5">
+          <p className="mt-10 mb-5 ">
             <li className="list-inside ">
               Have questions? We have answers here!
             </li>
@@ -27,7 +27,7 @@ const LatestPost = () => {
           </p>
         </div>
       </div>
-      <div className="mt-5 mb-10">
+      <div className="mt-5 mb-10 pl-3">
         <div className="collapse collapse-plus bg-base-200 mb-2">
           <input type="radio" name="my-accordion-3" checked="checked" />
           <div className="collapse-title text-xl font-medium">

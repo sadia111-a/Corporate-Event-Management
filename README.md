@@ -7,6 +7,14 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
+## five features and functionalities of my website:
+
+- User Authentication: My website includes user authentication features for login and registration. Users can create an account, log in, and log out securely. Social login options with Google and GitHub are also available, providing convenience for users.
+- Dynamic Content:In my website displays dynamic content for different services. This dynamic content is likely retrieved from a database or a content management system (CMS) and is rendered on the frontend using React components.
+- Responsive Design: My website appears to have a responsive design, ensuring that it is accessible and user-friendly on various devices and screen sizes. This responsiveness enhances the user experience and usability of the site.
+- Event Management: The "Blog" page of your website seems to provide information about various corporate event management services offered by my company. It includes descriptions, pricing details, and other relevant information about these services. Users can learn about services and offerings through this section.
+- Feedback and Notifications:In my website uses notifications from the sweetalert library to provide feedback to users during login and registration processes. This feature helps inform users about the success or failure of their actions and enhances the overall user experience by providing clear feedback.
+
 <div align="center">
   <img height="60" src="https://edurev.gumlet.io/AllImages/original/ApplicationImages/CourseImages/944e5d47-8c55-4a89-91e5-22ab5f2798fc_CI.png">
   <h1>MCQ TEST</h1>

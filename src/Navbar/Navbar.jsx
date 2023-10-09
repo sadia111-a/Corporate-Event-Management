@@ -100,7 +100,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className=" bg-gray-100 px-3 rounded-md font-extrabold text-lg text-amber-500 lg:text-3xl">
+          <a className=" bg-gray-100 lg:px-3 rounded-md font-extrabold text-lg text-amber-500 lg:text-3xl">
             Corporate Events
           </a>
         </div>
@@ -185,12 +185,12 @@ const Navbar = () => {
             <div className="flex items-center">
               <div className="mr-3">
                 <img
-                  src={user.photo}
+                  src={user.photoURL}
                   alt={user.displayName}
                   className="w-10 h-10 rounded-full"
                 />
               </div>
-              <div className="text-black text-lg font-semibold">
+              <div className="text-black text-sm lg:text-lg font-semibold">
                 {user.displayName}
               </div>
               <button className="btn btn-sm ml-3" onClick={logOut}>

@@ -22,13 +22,13 @@ const SocialLogin = () => {
       <div className="text-center flex gap-5 ">
         <button
           onClick={() => handleSocialLogin(googleLogin)}
-          className="btn btn-neutral btn-sm"
+          className="btn btn-neutral bg-slate-200 text-black hover:text-white btn-sm"
         >
           Google
         </button>
         <button
           onClick={() => handleSocialLogin(githubLogin)}
-          className="btn btn-neutral btn-sm"
+          className="btn btn-neutral bg-slate-200 text-black hover:text-white btn-sm"
         >
           Github
         </button>
