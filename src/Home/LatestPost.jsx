@@ -2,10 +2,21 @@ const LatestPost = () => {
   return (
     <div className="min-h-[100vh] ">
       <div className="  rounded-lg">
-        <h2 className="text-3xl mt-10  text-center font-bold text-orange-500">
-          Got Questions?
-        </h2>
-        <div className="bg-base-200 pl-5">
+        <div
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          <h2 className="text-3xl mt-10  text-center font-bold text-orange-500">
+            Got Questions?
+          </h2>
+        </div>
+        <div
+          className="bg-base-200 pl-5"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           <p className="mt-10 mb-5 ">
             <li className="list-inside ">
               Have questions? We have answers here!
@@ -27,7 +38,12 @@ const LatestPost = () => {
           </p>
         </div>
       </div>
-      <div className="mt-5 mb-10 pl-3">
+      <div
+        className="mt-5 mb-10 pl-3"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+      >
         <div className="collapse collapse-plus bg-base-200 mb-2">
           <input type="radio" name="my-accordion-3" checked="checked" />
           <div className="collapse-title text-xl font-medium">

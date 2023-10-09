@@ -1,7 +1,11 @@
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 const ErrorPage = () => {
   return (
     <div className="flex justify-center items-center h-screen bg-gray-200">
+      <Helmet>
+        <title>Event | ErrorPage</title>
+      </Helmet>
       <div className="text-center bg-white p-6 rounded-lg shadow-md">
         <h1 className="text-2xl font-bold text-gray-700 mb-4">
           Oops! Something went wrong

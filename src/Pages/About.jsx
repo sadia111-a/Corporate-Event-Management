@@ -1,6 +1,11 @@
+import { Helmet } from "react-helmet-async";
+
 const About = () => {
   return (
     <div className="pl-5 font-poppins">
+      <Helmet>
+        <title>Event | About</title>
+      </Helmet>
       <div className="">
         <h2 className="text-2xl mb-4 font-bold">
           About Our Corporate Event Management:

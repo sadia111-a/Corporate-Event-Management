@@ -1,9 +1,15 @@
 const Reviews = () => {
   return (
     <div className="min-h-[60vh]">
-      <h2 className="text-xl lg:text-3xl text-center font-bold mb-10 text-orange-500">
-        Our Customer Care Services
-      </h2>
+      <div
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+      >
+        <h2 className="text-xl lg:text-3xl text-center font-bold mb-10 text-orange-500">
+          Our Customer Care Services
+        </h2>
+      </div>
       <div>
         <div className="hero min-h-screen bg-base-300 shadow-md">
           <div className="hero-content flex-col lg:flex-row">
@@ -11,7 +17,11 @@ const Reviews = () => {
               src="https://i.ibb.co/2cQBrhM/customer.jpg"
               className="lg:max-w-xl rounded-lg shadow-2xl"
             />
-            <div>
+            <div
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+            >
               <h1 className="text-xl lg:text-3xl font-bold">
                 Outstanding Corporate Event Experience!!
               </h1>
