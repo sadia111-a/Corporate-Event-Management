@@ -2,7 +2,6 @@
 
 link of my live site :
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - https://event-management-a326e.web.app/
 
 ## five features and functionalities of my website:
